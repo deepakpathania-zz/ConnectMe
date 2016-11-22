@@ -5,7 +5,7 @@
     <div class="container">
 	   <div class="no-gutter row"> 
            <div class="col-md-12">
-               <div class="panel panel-default" id="sidebar">
+               <div class="panel panel-default dshadow" id="sidebar">
                    <div class="panel-body">                
 <?php          
     $sql = "SELECT * FROM user where user_username='$user_username'";

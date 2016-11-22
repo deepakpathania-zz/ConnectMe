@@ -7,7 +7,7 @@
         $Destination = '../userfiles/avatars';
         if(!isset($_FILES['ImageFile']) || !is_uploaded_file($_FILES['ImageFile']['tmp_name'])){
             $NewImageName= 'default.jpg';
-            // move_uploaded_file($_FILES['ImageFile']['tmp_name'], "$Destination/$NewImageName");
+            move_uploaded_file($_FILES['ImageFile']['tmp_name'], "$Destination/$NewImageName");
         }
         else{
             $RandomNum = rand(0, 9999999999);
@@ -17,7 +17,7 @@
             $ImageExt = str_replace('.','',$ImageExt);
             $ImageName = preg_replace("/\.[^.\s]{3,4}$/", "", $ImageName);
             $NewImageName = $ImageName.'-'.$RandomNum.'.'.$ImageExt;
-            // move_uploaded_file($_FILES['ImageFile']['tmp_name'], "$Destination/$NewImageName");
+            move_uploaded_file($_FILES['ImageFile']['tmp_name'], "$Destination/$NewImageName");
         }
         $user_firstname=$_REQUEST['user_firstname'];
         $user_lastname=$_REQUEST['user_lastname'];

@@ -38,14 +38,14 @@
             <div class="col-md-6">
                 <label for="">Username</label>
                 <div class="form-group float-label-control">
-                    <a href="http://<?php echo $rws['domain_websiteaddress'];?>/<?php echo $rws['user_username'];?>">        
+       
                         <div class="input-group">
-                            <span class="input-group-addon">http://<?php echo $rws['domain_websiteaddress'];?>/</span>
+                            <span class="input-group-addon">Username</span>
                             <fieldset disabled> 
                                 <input type="text" class="form-control" placeholder="<?php echo $rws['user_username'];?>" name="user_username" value="<?php echo $rws['user_username'];?>" id="disabledTextInput" autocomplete="off">
                             </fieldset>  
                         </div>
-                    </a>
+                
                 </div>
                 <div class="form-group float-label-control">
                     <label for="">Password</label>
@@ -103,9 +103,11 @@
         </div>
     </div>     
     <br>
-    <div class="submit">
+    <div class="submit row">
+        <div class="col-lg-8 col-lg-offset-2">
         <center>
-            <button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />Save Your Profile</button>
+            <button class="btn btn-primary ladda-button zbor" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" />Save Your Profile</button>
         </center>
     </div>
+</div>
 </form>

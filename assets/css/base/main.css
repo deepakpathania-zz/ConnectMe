@@ -50,6 +50,9 @@ p {
 .mleft {
   margin-left: 85%;
 }
+.bor {
+  border: 1px dashed black !important;
+}
 .zbor {
   border-radius: 0;
   font-size: 22px;

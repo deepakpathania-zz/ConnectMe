@@ -5,7 +5,7 @@
     while($row = mysqli_fetch_array($result,MYSQLI_BOTH)) {
 ?>
     <!-- Navbar1 -->
-	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+	    <div id="navigation" class="navbar navbar-default navbar-fixed-top lshadow">
 	      <div class="fluid-container">
 	        <div class="navbar-header">
 	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
@@ -13,7 +13,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-                <a class="navbar-brand" href="home.php"><b>Infismash</b></a>	        
+                <a class="navbar-brand" href="home.php"><b>AboutMe</b></a>	        
             </div>
 	        <div class="navbar-collapse collapse" id="navbar-collapse1">
 	           <ul class="nav navbar-nav">
@@ -23,7 +23,7 @@
 	           </ul>
                 <form class="navbar-form navbar-left" role="search" method="post" autocomplete="off" action="search-result.php">
                     <div class="form-group">
-                        <input type="text" class="search form-control" id="searchbox" placeholder="Search for People" name="search-form"/><br />
+                        <input type="text" class="search form-control bor" id="searchbox" placeholder="Search for People" name="search-form"/><br />
                         <div id="display"></div>
 				    </div> 
 				</form>
