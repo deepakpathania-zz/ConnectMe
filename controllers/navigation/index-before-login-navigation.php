@@ -1,5 +1,5 @@
     <!-- Before Login Navigation -->
-	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+	    <div id="navigation" class="navbar navbar-default navbar-fixed-top shadow">
 	      <div class="container">
 	        <div class="navbar-header">
 	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

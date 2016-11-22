@@ -1,6 +1,6 @@
     <?php include 'controllers/base/meta-tags.php' ?>
 
-    <title>Infismash - Creativity that inspires you</title>
+    <title>AboutMe - Build a portfolio and explore others.</title>
 
     <?php include 'controllers/base/javascript.php' ?>
     <?php include 'controllers/base/css.php' ?>

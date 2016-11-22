@@ -57,6 +57,9 @@ p {
 .form-control {
   border-radius: 0 !important;
 }
+.shadow {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
 /* Links */
 a {
     color: #3bc492;
