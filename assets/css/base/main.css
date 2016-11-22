@@ -13,7 +13,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: #3498db;
+    color: white;
 }
 
 h1{
@@ -37,6 +37,9 @@ p {
 }
 .mzero {
   margin: 0 auto;
+}
+.mtopn {
+  margin-top: -30px;
 }
 .mleft {
   margin-left: 85%;
