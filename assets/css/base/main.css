@@ -38,8 +38,14 @@ p {
 .mzero {
   margin: 0 auto;
 }
+.mtops {
+  margin-top: 15px;
+}
 .mtopn {
   margin-top: -30px;
+}
+.rsz {
+  resize:none;
 }
 .mleft {
   margin-left: 85%;

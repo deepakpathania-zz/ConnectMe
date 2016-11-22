@@ -7,7 +7,11 @@
         session_start();
         $user_shortbio=$_REQUEST['user_shortbio'];
         $user_dob=$_REQUEST['user_dob'];
-        $sql3="UPDATE user SET user_shortbio='$user_shortbio',user_dob='$user_dob' WHERE user_username = '$temp'";
+        $user_address = $_REQUEST['user_address'];
+        $user_profession= $_REQUEST['user_profession'];
+        $user_country = $_REQUEST['user_country'];
+        $user_skype = $_REQUEST['user_skype'];
+        $sql3="UPDATE user SET user_shortbio='$user_shortbio',user_dob='$user_dob',user_address='$user_address',user_country='$user_country',user_profession='$user_profession',user_skype='$user_skype' WHERE user_username = '$temp'";
         $user_username=$_SESSION['user_username'];
         $sql4="INSERT INTO user (user_shortbio,user_dob) VALUES ('$user_shortbio','$user_dob') WHERE user_username = $temp";
         $result = mysqli_query($database,"SELECT * FROM user WHERE user_username = '$user_username'");
