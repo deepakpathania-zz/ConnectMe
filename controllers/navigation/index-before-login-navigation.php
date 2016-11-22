@@ -7,11 +7,11 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-                <a class="navbar-brand" href="index.php"><b>Infismash</b></a>	    
+                <a class="navbar-brand" href="index.php"><b>AboutMe</b></a>	    
 	        </div>
 	        <div class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav back">
-	            <li><a href="login.php"> Login</a></li>
+	          <ul class="nav navbar-nav back align">
+	            <li><a href="login.php" class="bold"> Login</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>

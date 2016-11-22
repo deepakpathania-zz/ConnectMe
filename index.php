@@ -13,13 +13,14 @@
                     <div class="col-lg-12">
                     </div>
                     <div class="row">
-                    <div class="col-lg-6">
-                        <h1><b>know.me</b></h1>
-                        <h3>Tell your story to the whole world!</h3>
-                        <br>
-                        <?php include 'controllers/form/registration-form.php' ?>
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6">
+                            <h1><b>AboutMe</b></h1>
+                            <h3>Build a portfolio and explore others.</h3>
+                            <?php include 'controllers/form/registration-form.php' ?>
+                        </div>
+                        <div class="col-lg-3"></div>
                     </div>
-                </div>
                 <div class="col-lg-8">
                 </div>
                 <div class="col-lg-2">

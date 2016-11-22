@@ -23,9 +23,9 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">
-                                        <!-- http://<?php echo $rws['domain_websiteaddress'];?>/user_username= --> know.me/
+                                        <!-- http://<?php echo $rws['domain_websiteaddress'];?>/user_username= --> aboutme.com/
                                     </span>
-                                    <input type="username" class="form-control input-lg" placeholder="username" name="user_username" id="user_username" required> 
+                                    <input type="username" class="form-control username-field input-lg" placeholder="username" name="user_username" id="user_username" required> 
                                     <span class="input-group-addon" id="status"></span>
                                 </div>
                              </div>
@@ -40,8 +40,8 @@
                         </div>
                         <div class="row">    
                             <div class="col-lg-6">
-                                <div class="form-group">
-                                    <button class="btn btn-primary ladda-button" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload" style="float:left;" name="signup_button"/>Register</button>
+                                <div class="form-group centered">
+                                    <button class="btn btn-primary ladda-button mleft zbor" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload"  name="signup_button"/>Register</button>
                                 </div>
                             </div>
                         </div>
