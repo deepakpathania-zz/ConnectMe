@@ -39,9 +39,9 @@
                             </div>
                         </div>
                         <div class="row">    
-                            <div class="col-lg-6">
-                                <div class="form-group centered">
-                                    <button class="btn btn-primary ladda-button mleft zbor" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload"  name="signup_button"/>Register</button>
+                            <div class="col-lg-8 col-md-offset-0 col-lg-offset-2">
+                                <div class="form-gr-1oup centered">
+                                    <button class="btn btn-default shadow ladda-button zbor" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload"  name="signup_button"/>Register</button>
                                 </div>
                             </div>
                         </div>

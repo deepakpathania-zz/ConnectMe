@@ -67,7 +67,7 @@
     <script type="text/javascript"> 
         var totalCount = 5;
         function ChangeIt() {
-            var num =  Math.ceil( Math.random() * totalCount );
+            var num =  4;
             document.body.background = 'assets/img/backgrounds/background'+num+'.jpg';
             document.body.style.backgroundRepeat = "repeat";
         }
