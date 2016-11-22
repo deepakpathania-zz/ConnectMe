@@ -1,6 +1,6 @@
 <?php include 'components/session-check-index.php' ?>
 <?php include 'controllers/base/head.php' ?>
-<div class="container">
+<div class="container jumbotron dshadow wlim mtop">
     <div class="row">
       <div class="main">
           <h3 style="color:#65aeee;">Please Log In or <a href="index.php">Sign Up</a></h3>
@@ -24,8 +24,8 @@
               <div class="form-group">
                   <label for="inputPassword">Password</label>
                   <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn btn-primary ladda-button" data-style="zoom-in" value="Sign In" name="login_button">
+              </div><hr/>
+              <button type="submit" class="btn btn btn-primary marleft zbor ladda-button" data-style="zoom-in" value="Sign In" name="login_button">
                   Log In  
               </button>
           </form>

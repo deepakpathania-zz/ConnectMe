@@ -41,7 +41,7 @@
                         <div class="row">    
                             <div class="col-lg-8 col-md-offset-0 col-lg-offset-2">
                                 <div class="form-gr-1oup centered">
-                                    <button class="btn btn-default shadow ladda-button zbor" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload"  name="signup_button"/>Register</button>
+                                    <button class="btn btn-default lshadow ladda-button zbor" data-style="zoom-in" type="submit"  id="SubmitButton" value="Upload"  name="signup_button"/>Register</button>
                                 </div>
                             </div>
                         </div>
