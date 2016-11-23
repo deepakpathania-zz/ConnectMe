@@ -30,17 +30,17 @@
 		<!-- <div class="col-md-12 column"> -->
             <div>
                 <center>
-                    <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" class="img-responsive profile-avatar">
+                    <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" class="mtops bcircle img-responsive profile-avatar">
                 </center>
-                <h1 class="text-center profile-text profile-name"><?php echo $rws['user_firstname'];?> <?php echo $rws['user_lastname'];?></h1>
-                <h2 class="text-center profile-text profile-profession"><?php echo $rws['user_profession'];?></h2>
+                <h1 class="text-center profile-text profile-name whitecol capitalize"><?php echo $rws['user_firstname'];?> <?php echo $rws['user_lastname'];?></h1>
+                <h1 class="text-center profile-text profile-profession whitecol capitalize"><?php echo $rws['user_profession'];?></h1>
                 <br>
-                <div class="panel-group white" id="panel-profile">
+                <div class="panel-group white widthfix dshadow" id="panel-profile">
                     <div class="panel panel-default">
                         <div id="panel-element-info" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <div class="col-md-8 column">
-                                    <p class="text-center profile-title"><i class="fa fa-info"></i> Basic</p>
+                                    <p class="text-center profile-title"><i class="fa fa-id-card-o"></i> Basic</p>
                                     <hr>
 <?php
     if ($rws['user_shortbio']){
@@ -50,16 +50,6 @@
                                     </div>
                                     <div class="col-md-8">
                                         <p><?php echo $rws['user_shortbio'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_address']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-info"></i> Location</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_address'];?></p>
                                     </div>
 <?php } ?>
 <?php
@@ -100,10 +90,20 @@
     if ($rws['user_dob']){
 ?>   
                                     <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-calendar"></i> Date of Birth</p>
+                                        <p class="profile-details"><i class="fa fa-calendar"></i> DOB</p>
                                     </div>
                                     <div class="col-md-8">
                                         <p><?php echo $rws['user_dob'];?></p>
+                                    </div>
+<?php } ?>
+<?php
+    if ($rws['user_address']){
+?>   
+                                    <div class="col-md-4">
+                                        <p class="profile-details"><i class="fa fa-globe"></i> Address</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p><?php echo $rws['user_address'];?></p>
                                     </div>
 <?php } ?>
                                 </div>

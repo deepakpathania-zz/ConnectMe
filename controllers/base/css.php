@@ -11,7 +11,7 @@
     <link href="assets/css/animate/animate.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- PACE CSS -->
     <link rel="stylesheet" href="assets/css/pace/pace.css">
