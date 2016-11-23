@@ -24,12 +24,13 @@
 <div class="container">
     <div class="row clearfix mtop">
         <div class="col-md-12">
-            <h1 class="text-center big">Welcome to your profile</h1>
+            <h1 class="text-center big">Welcome to your profile!</h1>
         </div>
     </div>
+    <br/>
     <div class="row clearfix mtops">
         <div class="col-md-1"></div>
-            <div class="col-md-4 panel dshadow">
+            <div class="col-md-4 panel dshadow widthfix">
                 <div class="member centered pad">
                       <img src="assets/img/edit.png" alt="">
                       <div class="caption text-center">
@@ -40,7 +41,7 @@
                   </div>
         </div>
         <div class="col-md-2"></div>
-            <div class="col-md-4 panel dshadow">
+            <div class="col-md-4 panel dshadow widthfix">
                 <div class="member centered pad">
                       <img src="assets/img/users.png" alt="">
                       <div class="caption text-center">

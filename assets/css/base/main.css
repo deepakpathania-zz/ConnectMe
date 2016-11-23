@@ -7,6 +7,7 @@ body {
     padding-top: 50px;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+    overflow-x:hidden; 
 }
 
 /* Titles */
@@ -50,7 +51,7 @@ p {
   margin-top: 15px;
 }
 .mtopn {
-  margin-top: -30px;
+  margin-top: -20px !important;
 }
 .rsz {
   resize:none;
@@ -326,6 +327,9 @@ footer {
          -o-transition: all .25s ease-out;
             transition: all .25s ease-out;
   }
+  .big {
+  font-size: 40px;
+}
   .wlim {
     max-width: 80%;
   }
@@ -508,7 +512,7 @@ $mint: #16a085;
 }
 
 .panel-default{
-  
+  margin-top: 25px;
 }
 
 .panel-body{
