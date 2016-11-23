@@ -77,7 +77,7 @@ p {
         box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.35),0 6px 20px 0 rgba(0, 0, 0, 0.55) !important;
 }
 .lshadow {
-  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 /* Links */
 a {
@@ -407,13 +407,15 @@ $mint: #16a085;
 /*************************************
  * BUTTON THEME
  */
-
+.btn-primary {
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
 .ladda-button {
-	background: #666;
 	border: 0;
-	padding: 14px 18px;
 	font-size: 18px;
 	cursor: pointer;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  
 
 	color: #fff;
 	border-radius: 2px;
@@ -467,6 +469,7 @@ $mint: #16a085;
 	&[data-size=xl] .ladda-label {
 		font-size: 1.5em;
 	}
+
 }
 
 /* Other Styles*/

@@ -54,51 +54,97 @@
                 <div class="form-group float-label-control">
                     <label for="">Email</label> 
                     <input type="text" class="form-control" placeholder="<?php echo $rws['user_email'];?>" name="user_email" value="<?php echo $rws['user_email'];?>">
-                </div>  
+                </div>
+                <?php
+                    if ($rws['user_gender']){
+                ?>   
+                                <div class="form-group float-label-control">
+                                    <label for="">Gender</label> 
+                                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_gender'];?>" name="user_gender" value="<?php echo $rws['user_gender'];?>">
+                                </div>
+                <?php } ?>
+                <?php
+                    if ($rws['user_profession']){
+                ?>   
+                                <div class="form-group float-label-control">
+                                    <label for="">Profession</label> 
+                                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_profession'];?>" name="user_profession" value="<?php echo $rws['user_profession'];?>">
+                                </div>
+                <?php } ?>
+                <?php
+                    if ($rws['user_country']){
+                ?>   
+                                <div class="form-group float-label-control">
+                                    <label for="">Country</label> 
+                                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_cuntry'];?>" name="user_country" value="<?php echo $rws['user_country'];?>">
+                                </div>
+                <?php } ?>     
             </div>
         </div>
         <div class="tab-pane fade" id="personal">
             <div class="col-md-6">
                 <div class="form-group float-label-control">
                     <label for="">Short Bio</label>
-                    <textarea class="form-control" placeholder="<?php echo $rws['user_shortbio'];?>" rows="10" placeholder="<?php echo $rws['user_shortbio'];?>" name="user_shortbio" value="<?php echo $rws['user_shortbio'];?>"><?php echo $rws['user_shortbio'];?></textarea>
+                    <textarea class="form-control rsz" placeholder="<?php echo $rws['user_shortbio'];?>" rows="3" placeholder="<?php echo $rws['user_shortbio'];?>" name="user_shortbio" value="<?php echo $rws['user_shortbio'];?>"><?php echo $rws['user_shortbio'];?></textarea>
                 </div>
                 <div class="form-group float-label-control">
                     <label for="">Birthday</label>   
                     <input type="date" class="form-control" placeholder="<?php echo $rws['user_dob'];?>" name="user_dob" value="<?php echo $rws['user_dob'];?>">      
                 </div>
-                <div class="form-group float-label-control">
-                    <label for="">Profession</label>
-                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_profession'];?>" name="user_profession" value="<?php echo $rws['user_profession'];?>" id="profession">    
-                </div>  
-                <label for="">Gender</label>              
-                <div class="form-group float-label-control">
-                    <div class="radio-inline">
-                        <label>
-                            <input type="radio" name="user_gender" id="optionsRadios1" value="Male" checked>Male</label>
-                    </div>              
-                    <div class="radio-inline">
-                        <label>
-                            <input type="radio" name="user_gender" id="optionsRadios1" value="Female">Female</label>
+                <?php
+                    if ($rws['user_facebook']){
+                ?>   
+                    <div class="form-group float-label-control">
+                        <label for="">Facebook</label> 
+                        <input type="text" class="form-control" placeholder="<?php echo $rws['user_facebook'];?>" name="user_facebook" value="<?php echo $rws['user_facebook'];?>">
                     </div>
-                </div>
-                <div class="form-group float-label-control">
-                    <label for="">Country</label>
-                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_country'];?>" name="user_country" value="<?php echo $rws['user_country'];?>" id="country">    
-                </div>
+                <?php } ?>
+                <?php
+                    if ($rws['user_github']){
+                ?>   
+                    <div class="form-group float-label-control">
+                        <label for="">Github</label> 
+                        <input type="text" class="form-control" placeholder="<?php echo $rws['user_github'];?>" name="user_github" value="<?php echo $rws['user_github'];?>">
+                    </div>
+                <?php } ?>
             </div>
             <div class="col-md-6">
                 <div class="form-group float-label-control">
                     <label for="">Address</label>
-                    <input type="text" class="form-control" placeholder="<?php echo $rws['user_address'];?>" name="user_address" value="<?php echo $rws['user_address'];?>">    
+                    <textarea class="form-control rsz" placeholder="<?php echo $rws['user_address'];?>" rows="3" placeholder="<?php echo $rws['user_address'];?>" name="user_address" value="<?php echo $rws['user_address'];?>"><?php echo $rws['user_address'];?></textarea>    
                 </div>
                 <label for="">Website</label>
                 <div class="form-group float-label-control">
                     <div class="input-group">                  
-                        <span class="input-group-addon">http://</span>
+                        <span class="input-group-addon">Portfolio:</span>
                         <input type="text" class="form-control" placeholder="<?php echo $rws['user_website'];?>" name="user_website" value="<?php echo $rws['user_website'];?>">                  
                     </div>
-                </div> 
+                </div>
+                <?php
+                    if ($rws['user_twitter']){
+                ?>   
+                    <div class="form-group float-label-control">
+                        <label for="">Twitter</label> 
+                        <input type="text" class="form-control" placeholder="<?php echo $rws['user_twitter'];?>" name="user_twitter" value="<?php echo $rws['user_twitter'];?>">
+                    </div>
+                <?php } ?>
+                <?php
+                    if ($rws['user_linkedin']){
+                ?>   
+                    <div class="form-group float-label-control">
+                        <label for="">Linkedin</label> 
+                        <input type="text" class="form-control" placeholder="<?php echo $rws['user_linkedin'];?>" name="user_linkedin" value="<?php echo $rws['user_linkedin'];?>">
+                    </div>
+                <?php } ?> 
+                <?php
+                    if ($rws['user_skype']){
+                ?>   
+                    <div class="form-group float-label-control">
+                        <label for="">Skype</label> 
+                        <input type="text" class="form-control" placeholder="<?php echo $rws['user_skype'];?>" name="user_skype" value="<?php echo $rws['user_skype'];?>">
+                    </div>
+                <?php } ?>
+
             </div>
         </div>
     </div>     
