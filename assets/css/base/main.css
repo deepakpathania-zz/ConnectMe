@@ -81,7 +81,8 @@ p {
 }
 /* Links */
 a {
-    color: #3bc492;
+    color: #6fa0d2;
+    font-weight: 700;
     /*word-wrap: break-word;*/
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -92,7 +93,8 @@ a {
 
 a:hover,
 a:focus {
-    color: #c0392b;
+    color: #284e0b;
+    font-weight: 500;
     text-decoration: none;
     outline: 0;
 }

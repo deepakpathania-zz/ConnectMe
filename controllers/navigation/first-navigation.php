@@ -13,14 +13,9 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-                <a class="navbar-brand" href="home.php"><b>AboutMe</b></a>	        
+                <a class="navbar-brand" href="home.php"><b><i class="fa fa-user"></i> AboutMe</b></a>	        
             </div>
 	        <div class="navbar-collapse collapse" id="navbar-collapse1">
-	           <ul class="nav navbar-nav">
-	               <li>
-                       <a href="home.php"><i class="fa fa-home"></i> Home</a>
-                   </li>
-	           </ul>
                 <form class="navbar-form navbar-left" role="search" method="post" autocomplete="off" action="search-result.php">
                     <div class="form-group">
                         <input type="text" class="search form-control bor" id="searchbox" placeholder="Search for People" name="search-form"/><br />

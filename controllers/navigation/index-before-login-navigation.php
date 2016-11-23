@@ -7,7 +7,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-                <a class="navbar-brand" href="index.php"><b>AboutMe</b></a>	    
+                <a class="navbar-brand" href="index.php"><b><i class="fa fa-user"></i> AboutMe</b></a>	    
 	        </div>
 	        <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav back align">
