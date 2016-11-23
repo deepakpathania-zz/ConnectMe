@@ -26,6 +26,9 @@ h3{
 span {
   border-radius: 0 !important;
 }
+span.capitalize {
+    text-transform: capitalize;
+}
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
@@ -49,6 +52,9 @@ p {
 }
 .mleft {
   margin-left: 85%;
+}
+.mlefts {
+  margin-left: 6%;
 }
 .bor {
   border: 1px dashed black !important;
@@ -79,6 +85,13 @@ p {
 .lshadow {
   box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
+.big {
+  font-size: 60px;
+}
+.pad {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 /* Links */
 a {
     color: #6fa0d2;
@@ -94,7 +107,7 @@ a {
 a:hover,
 a:focus {
     color: #284e0b;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     outline: 0;
 }
@@ -228,7 +241,9 @@ a:after {
     -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-
+.black {
+  color: black !important;
+}
 /* Login Page */
   .mtop {
     margin-top: 5%;
@@ -360,7 +375,6 @@ footer {
 /* Base */
 #sidebar{
     padding-right: 25px;
-    padding-top: 10px;
 }
 
 .panel-body{
