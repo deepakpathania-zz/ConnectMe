@@ -2,9 +2,6 @@
 <?php require '_database/database.php'; ?>
 <?php include 'controllers/base/head.php' ?>
 <body>	
-    <script type="text/javascript"> 
-        ChangeIt();
-    </script>
 <?php include 'controllers/navigation/index-before-login-navigation.php' ?>
     <section id="home" name="home"></section>
         <div id="headerwrap">

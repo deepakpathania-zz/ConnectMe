@@ -107,6 +107,14 @@
                         <input type="text" class="form-control" placeholder="<?php echo $rws['user_github'];?>" name="user_github" value="<?php echo $rws['user_github'];?>">
                     </div>
                 <?php } ?>
+                <?php
+                    if ($rws['user_skype']){
+                ?>   
+                    <div class="form-group float-label-control">
+                        <label for="">Skype</label> 
+                        <input type="text" class="form-control" placeholder="<?php echo $rws['user_skype'];?>" name="user_skype" value="<?php echo $rws['user_skype'];?>">
+                    </div>
+                <?php } ?>
             </div>
             <div class="col-md-6">
                 <div class="form-group float-label-control">
@@ -136,14 +144,7 @@
                         <input type="text" class="form-control" placeholder="<?php echo $rws['user_linkedin'];?>" name="user_linkedin" value="<?php echo $rws['user_linkedin'];?>">
                     </div>
                 <?php } ?> 
-                <?php
-                    if ($rws['user_skype']){
-                ?>   
-                    <div class="form-group float-label-control">
-                        <label for="">Skype</label> 
-                        <input type="text" class="form-control" placeholder="<?php echo $rws['user_skype'];?>" name="user_skype" value="<?php echo $rws['user_skype'];?>">
-                    </div>
-                <?php } ?>
+
 
             </div>
         </div>

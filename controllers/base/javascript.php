@@ -64,14 +64,7 @@
     </script>  
 
     <!-- Image Rotation -->
-    <script type="text/javascript"> 
-        var totalCount = 5;
-        function ChangeIt() {
-            var num =  4;
-            document.body.background = 'assets/img/backgrounds/background'+num+'.jpg';
-            document.body.style.backgroundRepeat = "repeat";
-        }
-    </script> 
+
 
     <!-- Search Form -->
     <script type="text/javascript">
@@ -94,9 +87,6 @@
                 }return false;    
             });
         });
-        jQuery(function($){
-           $("#searchbox").Watermark("Search");
-       });
     </script>
 
     <!-- Closing the Search Form when clicked outside it -->
@@ -132,38 +122,18 @@
         });
     </script>
 
-    <!-- Background Upload Preview -->
-    <script type="text/javascript">
-        $(function(){
-            $("#uploadBackgroundFile").on("change", function(){
-                var files = !!this.files ? this.files : [];
-                if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
-                if (/^image/.test( files[0].type)){ // only image file
-                    var reader = new FileReader(); // instance of the FileReader
-                    reader.readAsDataURL(files[0]); // read the local file
-                    reader.onloadend = function(){ // set image data as background of div
-                        $("#uploadBackgroundImagePreview").css("display","block");
-                        $("#imageBackgroundPreview").css("background-image", "url("+this.result+")");
-                        $("#imageBackgroundPreview").css("max-height","223px");  
-                        $("#imageBackgroundPreview").css("height","223px"); 
-                    }
-                }
-            });
-        });
-    </script>
-
     <!-- Append -->
     <script type="text/javascript"> 
-        ChangeIt();
+        // ChangeIt();
     </script> 
     
     <script>
-        $('.carousel').carousel({
-          interval: 3500
-        })
+        // $('.carousel').carousel({
+        //   interval: 3500
+        // })
 	</script>
 
     <script>
-        $('#user_firstname').tooltip('toggle')
+        // $('#user_firstname').tooltip('toggle')
     </script>
 

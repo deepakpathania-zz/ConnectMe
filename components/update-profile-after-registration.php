@@ -29,7 +29,7 @@
         $user_linkedin = $_REQUEST['user_linkedin'];
         $user_github = $_REQUEST['user_github'];
         $user_website = $_REQUEST['user_website'];
-        $sql3="UPDATE user SET user_firstname='$user_firstname',user_lastname='$user_lastname',user_email='$user_email',user_password='$user_password',user_avatar='$NewImageName',user_gender='$user_gender',user_facebook='$user_facebook',user_linkedin='$user_linkedin',user_github='$user_github',user_website='$user_website' WHERE user_username = '$temp'";
+        $sql3="UPDATE user SET user_firstname='$user_firstname',user_lastname='$user_lastname',user_email='$user_email',user_password='$user_password',user_avatar='$NewImageName',user_gender='$user_gender',user_facebook='$user_facebook',user_linkedin='$user_linkedin',user_github='$user_github',user_website='$user_website',user_twitter='$user_twitter' WHERE user_username = '$temp'";
         $user_username=$_SESSION['user_username'];
         if( mysqli_num_rows($result) > 0) {
             mysqli_query($database,$sql3)or die(mysqli_error($database));

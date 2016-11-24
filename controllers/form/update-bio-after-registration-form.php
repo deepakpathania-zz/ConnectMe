@@ -12,7 +12,7 @@
         </div>
         <div class="form-group float-label-control">
             <label for="">Address</label>
-            <textarea class="form-control rsz" rows="3" placeholder="Your current address" name="user_address" value="<?php echo $rws['user_address'];?>"><?php echo $rws['user_shortbio'];?></textarea>
+            <textarea class="form-control rsz" rows="3" placeholder="Your current address" name="user_address" value="<?php echo $rws['user_address'];?>"><?php echo $rws['user_address'];?></textarea>
         </div>
     </div>    
     <div class="col-md-6">

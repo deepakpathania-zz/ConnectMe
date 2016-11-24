@@ -34,7 +34,7 @@
                         <div class="row">     
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <input type="password" class="form-control input-lg" placeholder="pasword" name="user_password" required>
+                                    <input type="password" class="form-control input-lg" placeholder="Password" name="user_password" required>
                                 </div>
                             </div>
                         </div>

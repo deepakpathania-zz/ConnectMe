@@ -1,6 +1,6 @@
 <?php include '_database/database.php' ?>
 <?php include 'controllers/base/head.php' ?>
-        <div class="container mtopn">
+        <div class="container mtopnb">
             <div class="no-gutter row">             
                 <div class="col-md-12">
                      <center><h2>Fill Up the details below to Continue</h2></center>
