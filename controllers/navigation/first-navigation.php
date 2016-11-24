@@ -13,7 +13,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-                <a class="navbar-brand" href="home.php"><b><i class="fa fa-user"></i> AboutMe</b></a>	        
+                <a class="navbar-brand" href="home.php"><b><i class="fa fa-user"></i> ConnectMe</b></a>	        
             </div>
 	        <div class="navbar-collapse collapse" id="navbar-collapse1">
                 <form class="navbar-form navbar-left" role="search" method="post" autocomplete="off" action="search-result.php">

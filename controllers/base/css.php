@@ -1,9 +1,6 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet">
       
-    <!-- Jasny Bootstrap CSS -->
-    <link href="assets/css/jasny-bootstrap/jasny-bootstrap.css" rel="stylesheet">
-
     <!-- Bootstrap Form Helpers CSS -->
     <link href="assets/css/bootstrap-form-helpers/bootstrap-formhelpers.css" rel="stylesheet">  
 
