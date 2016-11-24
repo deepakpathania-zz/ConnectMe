@@ -44,30 +44,30 @@
                                     <?php
                                         if ($rws['user_shortbio']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-info"></i> Bio</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> Bio</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-9">
                                             <p><?php echo $rws['user_shortbio'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_email']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-envelope"></i> Email</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> Email</p>
                                         </div>
-                                        <div class="col-xs-8">                                    
+                                        <div class="col-xs-9">                                    
                                             <p><?php echo $rws['user_email'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_country']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-map-marker"></i> Country</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> Country</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-9">
                                             <p><?php echo $rws['user_country'];?></p>
                                         </div>
                                     <?php } ?>

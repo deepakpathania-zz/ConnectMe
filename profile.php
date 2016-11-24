@@ -45,65 +45,65 @@
                                     <?php
                                         if ($rws['user_shortbio']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-info"></i> Bio</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> Bio</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-9">
                                             <p><?php echo $rws['user_shortbio'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_email']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-envelope"></i> Email</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> Email</p>
                                         </div>
-                                        <div class="col-xs-8">                                    
+                                        <div class="col-xs-9">                                    
                                             <p><?php echo $rws['user_email'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_country']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-map-marker"></i> Country</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> Country</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-9">
                                             <p><?php echo $rws['user_country'];?></p>
                                         </div>
                                     <?php } ?>
                                 </div>
 
-                                <div class="col-md-4 column">
+                                <div class="col-md-4 centered column">
                                     <p class="centered profile-title"><i class="fa fa-info"></i> Personal</p>
                                     <hr>
                                     <?php
                                         if ($rws['user_gender']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-user"></i> Gender</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> Gender</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-9">
                                             <p><?php echo $rws['user_gender'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_dob']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-calendar"></i> DOB</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> DOB</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-9">
                                             <p><?php echo $rws['user_dob'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_address']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-globe"></i> Address</p>
+                                        <div class="col-xs-3">
+                                            <p class="profile-details"> Address</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-9">
                                             <p><?php echo $rws['user_address'];?></p>
                                         </div>
                                     <?php } ?>
