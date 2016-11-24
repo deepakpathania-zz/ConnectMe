@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="col-lg-3"></div>
                         <div class="col-lg-6">
-                            <h1><b>ConnectMe</b></h1>
+                            <h1 class="big"><b>ConnectMe</b></h1>
                             <h3>Build a portfolio and explore others.</h3>
                             <?php include 'controllers/form/registration-form.php' ?>
                         </div>

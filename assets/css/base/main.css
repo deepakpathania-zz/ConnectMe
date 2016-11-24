@@ -47,6 +47,7 @@ p {
 .mzero {
   margin: 0 auto;
 }
+
 .mtops {
   margin-top: 15px;
 }
@@ -331,7 +332,7 @@ footer {
             transition: all .25s ease-out;
   }
   .big {
-  font-size: 40px;
+  font-size: 60px !important; 
 }
   .wlim {
     max-width: 80%;
