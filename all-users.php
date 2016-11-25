@@ -19,8 +19,8 @@
                                                                         <div class="panel panel-default dshadow">
                                                                             <div id="panel-element-<?php echo $rws['user_id']; ?>" class="panel-collapse collapse in">
                                                                                 <div class="panel-body">
-                                                                                    <div class="col-md-12 centered mlefts column">
-                                                                                        <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" name="aboutme" class="img-responsive">                                  
+                                                                                    <div class="col-md-12 centered column">
+                                                                                        <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" name="aboutme" class="img-responsive avatar-img">                                  
                                                                                     </div>
                                                                                     <div class="col-md-12 centered column">
                                                                                         <h2><span class="capitalize"><a href="profile.php?user_username=<?php echo $rws['user_username'];?>"><?php echo $rws['user_firstname'];?> <?php echo $rws['user_lastname'];?></a></span></h2>

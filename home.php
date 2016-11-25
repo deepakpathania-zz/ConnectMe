@@ -30,27 +30,31 @@
     <br/>
     <div class="row clearfix mtops">
         <div class="col-md-1"></div>
+        <a href="edit-profile.php" style="color:#256b9b">
             <div class="col-md-4 panel dshadow widthfix">
                 <div class="member centered pad">
                       <img src="assets/img/edit.png" alt="">
                       <div class="caption text-center">
                           <h3>
-                            <a href="edit-profile.php" style="color:#256b9b"><b>Edit your profile</b></a>
+                            <b>Edit your profile</b>
                           </h3>
                       </div>
                   </div>
         </div>
+        </a>
         <div class="col-md-2"></div>
+        <a href="all-users.php" style="color:#256b9b">
             <div class="col-md-4 panel dshadow widthfix">
                 <div class="member centered pad">
                       <img src="assets/img/users.png" alt="">
                       <div class="caption text-center">
                           <h3>
-                            <a href="all-users.php" style="color:#256b9b"><b>View other users</b></a>
+                            <b>View other users</b>
                           </h3>
                       </div>
                 </div>
             </div>
+          </a>
         <div class="col-md-1"></div>
     </div>
 </div>
