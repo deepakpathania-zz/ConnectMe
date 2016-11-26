@@ -12,7 +12,7 @@
         </div>
         <div class="form-group float-label-control">
             <label for="">Course Name</label>
-            <input type="text" class="form-control" placeholder="B.tech" name="user_course" value="<?php echo $rws['user_course'];?>"/>
+            <input type="text" class="form-control" placeholder="B.tech" name="user_course" value="<?php echo $rws['user_course'];?>" required/>
         </div>
         <div class="form-group float-label-control">
             <label for="">Expected graduation year</label>
@@ -26,7 +26,7 @@
         </div>
         <div class="form-group float-label-control">
             <label for="">Field of course</label>
-            <input type="text" class="form-control" placeholder="Computer Science" name="user_course_field" value="<?php echo $rws['user_course_field'];?>"/>
+            <input type="text" class="form-control" placeholder="Computer Science" name="user_course_field" value="<?php echo $rws['user_course_field'];?>" required/>
         </div>
         <div class="form-group float-label-control">
             <label for="">Extracurricular</label>
