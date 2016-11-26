@@ -51,10 +51,16 @@ CREATE TABLE `user` (
   `user_github` varchar(255) DEFAULT NULL,
   `user_youtube` varchar(255) DEFAULT NULL,
   `user_vimeo` varchar(255) DEFAULT NULL,
+  `user_university` varchar(255) DEFAULT NULL,
+  `user_course` varchar(255) DEFAULT NULL,
+  `user_graduation_year` varchar(255) DEFAULT NULL,
+  `user_cgpa` varchar(255) DEFAULT NULL,
+  `user_course_field` varchar(255) DEFAULT NULL,
+  `user_extra` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_email` (`user_email`),
   UNIQUE KEY `user_username` (`user_username`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +69,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (5,'firstuser@gmail.com','newuser','first','user','team-3092304631.png','Software Engineer in Delhi.','firstuser','','http://facebook.com/firstuser','','http://linkedin.com/firstuser',NULL,'','','firstuser.com','1996-12-11','Student','Male',NULL,'Random address','','2016-11-22','India','@first.user','http://github.com/firstuser','',''),(6,'seconduser@gmail.com','newuser','second ','user','user-1893274406.png','Software developer','seconduser','','http://facebook.com/seconduser','http://twitter.com/seconduser','http://linkedin.com/seconduser',NULL,'','','seconduser.com','1996-12-11','student','Male',NULL,'Actual street, actual colony, actual city, actual country.','','2016-11-23','INdia','@second.user','http://github.com/seconduser','',''),(8,'thirduser@gmail.com','newuser','third','user','sponsor-4707327294.png','Third user. Short description. Testing purposes.','thirduser',NULL,'http://facebook.com/thirduser',NULL,'http://linkedin.com/thirduser',NULL,NULL,NULL,'thirduser.com','2016-11-01','Web Developer','Male',NULL,'12/24 KAROL BAGH AA JAIYO.','','2016-11-23','India','@abc.xyz','http://github.com/thirduser',NULL,NULL);
+
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -76,4 +82,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-23 23:40:56
+-- Dump completed on 2016-11-26 23:25:03
