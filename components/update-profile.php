@@ -80,7 +80,13 @@
         $user_youtube=$_REQUEST['user_youtube'];
         $user_vimeo=$_REQUEST['user_vimeo'];
         $user_pinterest=$_REQUEST['user_pinterest'];
-        $sql3="UPDATE user SET user_firstname='$user_firstname',user_lastname='$user_lastname',user_profession='$user_profession',user_address='$user_address',user_email='$user_email',user_password='$user_password',user_shortbio='$user_shortbio',user_longbio='$user_longbio',user_dob='$user_dob',user_gender='$user_gender',user_country='$user_country',user_website='$user_website',user_facebook='$user_facebook',user_twitter='$user_twitter',user_googleplus='$user_googleplus',user_skype='$user_skype',user_github='$user_github',user_youtube='$user_youtube',user_vimeo='$user_vimeo',user_pinterest='$user_pinterest' WHERE user_username = '$temp'";
+        $user_university = $_REQUEST['user_university'];
+        $user_course= $_REQUEST['user_course'];
+        $user_graduation_year=$_REQUEST['user_graduation_year'];
+        $user_cgpa=$_REQUEST['user_cgpa'];
+        $user_course_field=$_REQUEST['user_course_field'];
+        $user_extra= $_REQUEST['user_extra'];
+        $sql3="UPDATE user SET user_firstname='$user_firstname',user_lastname='$user_lastname',user_profession='$user_profession',user_address='$user_address',user_email='$user_email',user_password='$user_password',user_shortbio='$user_shortbio',user_longbio='$user_longbio',user_dob='$user_dob',user_gender='$user_gender',user_country='$user_country',user_website='$user_website',user_facebook='$user_facebook',user_twitter='$user_twitter',user_googleplus='$user_googleplus',user_skype='$user_skype',user_github='$user_github',user_youtube='$user_youtube',user_vimeo='$user_vimeo',user_pinterest='$user_pinterest',user_university='$user_university',user_course='$user_course',user_graduation_year='$user_graduation_year',user_cgpa='$user_cgpa',user_course_field='$user_course_field',user_extra='$user_extra' WHERE user_username = '$temp'";
             mysqli_query($database,$sql3)or die(mysqli_error($database));
             header("location:../edit-profile.php?user_username=$temp&request=profile-update&status=success");
     }    
