@@ -184,6 +184,70 @@
                         </div>
                     </div>
                 </div>
+                <?php
+                    if ($rws['user_achievement_title']){
+                ?> 
+                 <div class="panel-group white widthfix dshadow " id="panel-profile">
+                    <div class="panel panel-default">
+                        <div id="panel-element-info" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p class="text-center profile-title"><i class="fa fa-trophy"></i> Achievement</p>
+                                <hr/>
+                                <div class="col-md-6 column centered">
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Title:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_achievement_title'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_issuer']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Issuer:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_issuer'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_link']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Link:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_link'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-md-6 column centered">
+                                    <?php
+                                        if ($rws['user_achievement_date']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Date:</p>
+                                        </div>
+                                       <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_date'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_description']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Description:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_description'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="panel-group white widthfix dshadow " id="panel-profile">
                     <div class="panel panel-default">
                         <div id="panel-element-info" class="panel-collapse collapse in">
