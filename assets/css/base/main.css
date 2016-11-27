@@ -57,6 +57,9 @@ p {
 .mtopnb {
   margin-top: -80px !important;
 }
+.mtopnsmall {
+  margin-top: -60px !important;
+}
 .rsz {
   resize:none;
 }
