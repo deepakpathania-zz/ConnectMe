@@ -57,10 +57,15 @@ CREATE TABLE `user` (
   `user_cgpa` varchar(255) DEFAULT NULL,
   `user_course_field` varchar(255) DEFAULT NULL,
   `user_extra` varchar(255) DEFAULT NULL,
+  `user_achievement_title` varchar(255) DEFAULT NULL,
+  `user_achievement_issuer` varchar(255) DEFAULT NULL,
+  `user_achievement_link` varchar(255) DEFAULT NULL,
+  `user_achievement_date` date DEFAULT NULL,
+  `user_achievement_description` text,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_email` (`user_email`),
   UNIQUE KEY `user_username` (`user_username`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -82,4 +87,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-26 23:25:03
+-- Dump completed on 2016-11-27 14:15:36
