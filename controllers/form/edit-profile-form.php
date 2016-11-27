@@ -4,6 +4,7 @@
       <li class="active"><a href="#general" data-toggle="tab">General</a></li>
       <li><a href="#personal" data-toggle="tab">Personal</a></li>
       <li><a href="#education" data-toggle="tab">Education</a></li>
+      <li><a href="#achievement" data-toggle="tab">Achievement</a></li>
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
@@ -121,7 +122,7 @@
                     </div>
             </div>
         </div>
-          <div class="tab-pane fade" id="education">
+        <div class="tab-pane fade" id="education">
             <div class="col-md-6">
          
                     <div class="form-group float-label-control">
@@ -158,6 +159,37 @@
                         <input type="text" class="form-control" placeholder="Founder, XYZ Club" name="user_extra" value="<?php echo $rws['user_extra'];?>">
                     </div>
     
+            </div>
+        </div>
+        <div class="tab-pane fade" id="achievement">
+            <div class="col-md-6">
+         
+                    <div class="form-group float-label-control">
+                        <label for="">Achievement title</label> 
+                        <input type="text" class="form-control" placeholder="First prize, coding competition" name="user_achievement_title" value="<?php echo $rws['user_achievement_title'];?>">
+                    </div>
+        
+                    <div class="form-group float-label-control">
+                        <label for="">Issuer</label> 
+                        <input type="text" class="form-control" placeholder="Organizer" name="user_achievement_issuer" value="<?php echo $rws['user_achievement_issuer'];?>">
+                    </div>
+          
+                    <div class="form-group float-label-control">
+                        <label for="">Relevant link</label> 
+                        <input type="text" class="form-control" placeholder="Project repo/demo link" name="user_achievement_link" value="<?php echo $rws['user_achievement_link'];?>">
+                    </div>
+               
+            </div>
+            <div class="col-md-6">
+                <div class="form-group float-label-control">
+                    <label for="">Date</label>   
+                    <input type="date" class="form-control" placeholder="<?php echo $rws['user_achievement_date'];?>" name="user_achievement_date" value="<?php echo $rws['user_achievement_date'];?>">      
+                </div> 
+                <div class="form-group float-label-control">
+                    <label for="">Description</label>
+                    <textarea class="form-control rsz" placeholder="Describe the achievement briefly." rows="3" placeholder="<?php echo $rws['user_achievement_description'];?>" name="user_achievement_description" value="<?php echo $rws['user_achievement_description'];?>"><?php echo $rws['user_achievement_description'];?></textarea>
+                </div>
+ 
             </div>
         </div>
     </div>     
