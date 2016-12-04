@@ -57,6 +57,9 @@ p {
 .mtopnb {
   margin-top: -80px !important;
 }
+.mtopnsmall {
+  margin-top: -60px !important;
+}
 .rsz {
   resize:none;
 }
@@ -521,6 +524,8 @@ $mint: #16a085;
 
 .panel-default{
   margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .panel-body{
@@ -530,6 +535,9 @@ $mint: #16a085;
   word-wrap: break-word !important; 
 }
 .col-xs-10 {
+  word-wrap: break-word !important; 
+}
+.col-xs-12 {
   word-wrap: break-word !important; 
 }
 .first-navigation-dropdown{

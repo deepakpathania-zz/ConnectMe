@@ -26,7 +26,7 @@
 ?>
 <div class="profile">
     <div class="row clearfix">
-        <!-- <div class="col-xs-12 column"> -->
+        <!-- <div class="col-xs- col-sm-3 column"> -->
             <div>
                 <center>
                     <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" class="mtops bcircle img-responsive profile-avatar">
@@ -38,71 +38,70 @@
                     <div class="panel panel-default">
                         <div id="panel-element-info" class="panel-collapse collapse in">
                             <div class="panel-body">
-                                <div class="col-md-8 column">
+                                <div class="col-md-8 column centered">
                                     <p class="text-center profile-title"><i class="fa fa-id-card-o"></i> Basic</p>
                                     <hr>
                                     <?php
                                         if ($rws['user_shortbio']){
                                     ?>   
-                                        <div class="col-xs-3">
+                                        <div class="col-xs-12 col-sm-3">
                                             <p class="profile-details"> Bio</p>
                                         </div>
-                                        <div class="col-xs-9">
+                                        <div class="col-xs-12 col-sm-9">
                                             <p><?php echo $rws['user_shortbio'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_email']){
                                     ?>   
-                                        <div class="col-xs-3">
+                                        <div class="col-xs-12 col-sm-3">
                                             <p class="profile-details"> Email</p>
                                         </div>
-                                        <div class="col-xs-9">                                    
+                                        <div class="col-xs-12 col-sm-9">                                    
                                             <p><?php echo $rws['user_email'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_country']){
                                     ?>   
-                                        <div class="col-xs-3">
+                                        <div class="col-xs-12 col-sm-3">
                                             <p class="profile-details"> Country</p>
                                         </div>
-                                        <div class="col-xs-9">
+                                        <div class="col-xs-12 col-sm-9">
                                             <p><?php echo $rws['user_country'];?></p>
                                         </div>
                                     <?php } ?>
                                 </div>
-
-                                <div class="col-md-4 column">
+                                <div class="col-md-4 centered column">
                                     <p class="centered profile-title"><i class="fa fa-info"></i> Personal</p>
                                     <hr>
                                     <?php
                                         if ($rws['user_gender']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-user"></i> Gender</p>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> Gender</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-12 col-sm-9">
                                             <p><?php echo $rws['user_gender'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_dob']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-calendar"></i> DOB</p>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> DOB</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-12 col-sm-9">
                                             <p><?php echo $rws['user_dob'];?></p>
                                         </div>
                                     <?php } ?>
                                     <?php
                                         if ($rws['user_address']){
                                     ?>   
-                                        <div class="col-xs-4">
-                                            <p class="profile-details"><i class="fa fa-globe"></i> Address</p>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> Address</p>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-12 col-sm-9">
                                             <p><?php echo $rws['user_address'];?></p>
                                         </div>
                                     <?php } ?>
@@ -115,9 +114,147 @@
                     <div class="panel panel-default">
                         <div id="panel-element-info" class="panel-collapse collapse in">
                             <div class="panel-body">
+                                <p class="text-center profile-title"><i class="fa fa-graduation-cap"></i> Education</p>
+                                <hr/>
+                                <div class="col-md-6 column centered">
+                                    <?php
+                                        if ($rws['user_university']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">University:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_university'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_course']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Course:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_course'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_graduation_year']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Graduation:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_graduation_year'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-md-6 column centered">
+                                    <?php
+                                        if ($rws['user_cgpa']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">CGPA</p>
+                                        </div>
+                                       <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_cgpa'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_course_field']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Field:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_course_field'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_extra']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Extra:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_extra'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+                    if ($rws['user_achievement_title']){
+                ?> 
+                 <div class="panel-group white widthfix dshadow " id="panel-profile">
+                    <div class="panel panel-default">
+                        <div id="panel-element-info" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p class="text-center profile-title"><i class="fa fa-trophy"></i> Achievement</p>
+                                <hr/>
+                                <div class="col-md-6 column centered">
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Title:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_achievement_title'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_issuer']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Issuer:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_issuer'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_link']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Link:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_link'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-md-6 column centered">
+                                    <?php
+                                        if ($rws['user_achievement_date']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Date:</p>
+                                        </div>
+                                       <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_date'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_description']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Description:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_description'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group white widthfix dshadow " id="panel-profile">
+                    <div class="panel panel-default">
+                        <div id="panel-element-info" class="panel-collapse collapse in">
+                            <div class="panel-body">
                                 <p class="text-center profile-title"><i class="fa fa-share-square-o"></i> Social profiles</p>
                                 <hr/>
-                                <div class="col-md-4 column">
+                                <div class="col-md-4 column centered">
                                     <?php
                                         if ($rws['user_facebook']){
                                     ?>   
@@ -139,7 +276,7 @@
                                         </div>
                                     <?php } ?>
                                 </div>
-                                <div class="col-md-4 column">
+                                <div class="col-md-4 column centered">
                                     <?php
                                         if ($rws['user_linkedin']){
                                     ?>   
@@ -161,7 +298,7 @@
                                         </div>
                                     <?php } ?>
                                     </div>
-                                    <div class="col-md-4 column">
+                                    <div class="col-md-4 column centered">
                                     <?php
                                         if ($rws['user_skype']){
                                     ?>   

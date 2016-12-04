@@ -48,9 +48,17 @@ for example : <code>source /var/www/html/ConnectMe/_sqlfile/user.sql </code>
 
 ![selection_021](https://cloud.githubusercontent.com/assets/15071438/20595189/fefcaf7e-b25e-11e6-9c4f-2cf59bd63137.png)
 
+- Education details
+
+![selection_025](https://cloud.githubusercontent.com/assets/15071438/20646881/edf9ca06-b4aa-11e6-90cc-c7ad9cac56fd.png)
+
+- Achievement details
+
+![selection_026](https://cloud.githubusercontent.com/assets/15071438/20646882/edfdbab2-b4aa-11e6-83b2-4e6475a6936f.png)
+
 - Edit profile information
 
-![selection_022](https://cloud.githubusercontent.com/assets/15071438/20595191/ff0629f0-b25e-11e6-80d3-5d3af240f3aa.png)
+![selection_027](https://cloud.githubusercontent.com/assets/15071438/20646883/ee027228-b4aa-11e6-9f82-6004a23e1afc.png)
 
 - Post login home page
 
@@ -58,7 +66,10 @@ for example : <code>source /var/www/html/ConnectMe/_sqlfile/user.sql </code>
 
 - Profile page to be shared.
 
-![selection_024](https://cloud.githubusercontent.com/assets/15071438/20595193/ff0f0f16-b25e-11e6-8e4b-4f2188b5bf37.png)
+![selection_028](https://cloud.githubusercontent.com/assets/15071438/20646884/ee08c34e-b4aa-11e6-959f-09ce51d28712.png)
+
+![selection_029](https://cloud.githubusercontent.com/assets/15071438/20646886/ee0d0e36-b4aa-11e6-904d-7ea60cc02f6c.png)
+
 
 
 
