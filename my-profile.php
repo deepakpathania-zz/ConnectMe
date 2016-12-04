@@ -13,217 +13,307 @@
     $url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 ?>
 <div class="profile">
-	<div class="row clearfix">
-		<!-- <div class="col-md-12 column"> -->
+    <div class="row clearfix">
+        <!-- <div class="col-xs- col-sm-3 column"> -->
             <div>
                 <center>
-                    <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" class="img-responsive profile-avatar">
-                    <br>
-                    <div class="btn-group">
-                        <a href="http://www.facebook.com/sharer.php?u=<?php echo $url ?> &t=<?php echo $rws['user_firstname'];?> <?php echo $rws['user_lastname'];?> " alt="Share this profile on Facebook" title="Share on Facebook" target="_blank" ><button type="button" class="btn btn-default"><i class="fa fa-facebook"></i></button></a>
-                        <a href="http://twitter.com/share?text=<?php echo $rws['user_firstname'];?> <?php echo $rws['user_lastname'];?>&url=<?php echo $url ?>" alt="Tweet This Post" title="Tweet about the profile" target="_blank"><button type="button" class="btn btn-default"><i class="fa fa-twitter"></i></button></a>
-                        <a href="https://plusone.google.com/_/+1/confirm?hl=en-US&url=<?php echo $url ?>" alt="Share this profile on Google+" title="Share on Google+" target="_blank" ><button type="button" class="btn btn-default"><i class="fa fa-google-plus"></i></button></a>
-                    </div>
+                    <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" class="mtops bcircle img-responsive profile-avatar">
                 </center>
-                <h1 class="text-center profile-text profile-name"><?php echo $rws['user_firstname'];?> <?php echo $rws['user_lastname'];?></h1>
-                <h2 class="text-center profile-text profile-profession"><?php echo $rws['user_profession'];?></h2>
+                <h1 class="text-center profile-text profile-name whitecol capitalize"><?php echo $rws['user_firstname'];?> <?php echo $rws['user_lastname'];?></h1>
+                <h1 class="text-center profile-text profile-profession whitecol capitalize"><?php echo $rws['user_profession'];?></h1>
                 <br>
-                <div class="panel-group white" id="panel-profile">
-                    <div class="panel panel-default white">
-                        <div class="panel-heading white">
-                            <center>
-                                <a class="panel-title" data-toggle="collapse" data-parent="#panel-profile" href="#panel-element-info">Details</a>
-                            </center>
-                        </div>
+                <div class="panel-group white widthfix dshadow mtopn" id="panel-profile">
+                    <div class="panel panel-default">
                         <div id="panel-element-info" class="panel-collapse collapse in">
                             <div class="panel-body">
-                                <div class="col-md-4 column">
-                                    <p class="text-center profile-title"><i class="fa fa-info"></i> Basic</p>
+                                <div class="col-md-8 column centered">
+                                    <p class="text-center profile-title"><i class="fa fa-id-card-o"></i> Basic</p>
                                     <hr>
-<?php
-    if ($rws['user_shortbio']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-info"></i> Bio</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_shortbio'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_address']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-info"></i> Location</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_address'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_email']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-envelope"></i> Email</p>
-                                    </div>
-                                    <div class="col-md-8">                                    
-                                        <p><?php echo $rws['user_email'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_country']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-info"></i> Country</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_country'];?></p>
-                                    </div>
-<?php } ?>
+                                    <?php
+                                        if ($rws['user_shortbio']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> Bio</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_shortbio'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_email']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> Email</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_email'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_country']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> Country</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_country'];?></p>
+                                        </div>
+                                    <?php } ?>
                                 </div>
-                                <div class="col-md-4 column">
-                                    <p class="text-center profile-title"><i class="fa fa-info"></i> Personal</p>
+                                <div class="col-md-4 centered column">
+                                    <p class="centered profile-title"><i class="fa fa-info"></i> Personal</p>
                                     <hr>
-<?php
-    if ($rws['user_gender']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-user"></i> Gender</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_gender'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_maritialstatus']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-users"></i> Maritial Status</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_maritialstatus'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_dob']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-calendar"></i> Date of Birth</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_dob'];?></p>
-                                    </div>
-<?php } ?>
-                                </div>
-                                <div class="col-md-4 column">
-                                    <p class="text-center profile-title"><i class="fa fa-info"></i> Social</p>
-                                    <hr>
-<?php
-    if ($rws['user_facebook']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-facebook"></i> Facebook</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_facebook'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_twitter']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-twitter"></i> Twitter</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_twitter'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_linkedin']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-linkedin"></i> LinkedIn</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_linkedin'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_pinterest']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-pinterest"></i> Pinterest</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_pinterest'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_googleplus']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-google-plus"></i> Google Plus</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_googleplus'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_stumbleupon']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-stumbleupon"></i> Stumble Upon</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_stumbleupon'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_github']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-github"></i> Github</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_github'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_vimeo']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-vimeo-square"></i> Vimeo</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_vimeo'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_youtube']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-youtube"></i> Youtube</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_youtube'];?></p>
-                                    </div>
-<?php } ?>
-<?php
-    if ($rws['user_skype']){
-?>   
-                                    <div class="col-md-4">
-                                        <p class="profile-details"><i class="fa fa-skype"></i> Skype</p>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p><?php echo $rws['user_skype'];?></p>
-                                    </div>
-<?php } ?>
+                                    <?php
+                                        if ($rws['user_gender']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> Gender</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_gender'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_dob']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> DOB</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_dob'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_address']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details"> Address</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_address'];?></p>
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="panel-group white widthfix dshadow " id="panel-profile">
+                    <div class="panel panel-default">
+                        <div id="panel-element-info" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p class="text-center profile-title"><i class="fa fa-graduation-cap"></i> Education</p>
+                                <hr/>
+                                <div class="col-md-6 column centered">
+                                    <?php
+                                        if ($rws['user_university']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">University:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_university'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_course']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Course:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_course'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_graduation_year']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Graduation:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_graduation_year'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-md-6 column centered">
+                                    <?php
+                                        if ($rws['user_cgpa']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">CGPA</p>
+                                        </div>
+                                       <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_cgpa'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_course_field']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Field:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_course_field'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_extra']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Extra:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_extra'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+                    if ($rws['user_achievement_title']){
+                ?> 
+                 <div class="panel-group white widthfix dshadow " id="panel-profile">
+                    <div class="panel panel-default">
+                        <div id="panel-element-info" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p class="text-center profile-title"><i class="fa fa-trophy"></i> Achievement</p>
+                                <hr/>
+                                <div class="col-md-6 column centered">
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Title:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p><?php echo $rws['user_achievement_title'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_issuer']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Issuer:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_issuer'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_link']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Link:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_link'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-md-6 column centered">
+                                    <?php
+                                        if ($rws['user_achievement_date']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Date:</p>
+                                        </div>
+                                       <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_date'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_achievement_description']){
+                                    ?>   
+                                        <div class="col-xs-12 col-sm-3">
+                                            <p class="profile-details">Description:</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">                                    
+                                            <p><?php echo $rws['user_achievement_description'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group white widthfix dshadow " id="panel-profile">
+                    <div class="panel panel-default">
+                        <div id="panel-element-info" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p class="text-center profile-title"><i class="fa fa-share-square-o"></i> Social profiles</p>
+                                <hr/>
+                                <div class="col-md-4 column centered">
+                                    <?php
+                                        if ($rws['user_facebook']){
+                                    ?>   
+                                        <div class="col-xs-2">
+                                            <p class="profile-details"><i class="fa fa-2x fa-facebook"></i></p>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <p><?php echo $rws['user_facebook'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_twitter']){
+                                    ?>   
+                                        <div class="col-xs-2">
+                                            <p class="profile-details"><i class="fa fa-2x fa-twitter"></i></p>
+                                        </div>
+                                        <div class="col-xs-10">                                    
+                                            <p><?php echo $rws['user_twitter'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-md-4 column centered">
+                                    <?php
+                                        if ($rws['user_linkedin']){
+                                    ?>   
+                                        <div class="col-xs-2">
+                                            <p class="profile-details"><i class="fa fa-2x fa-linkedin"></i></p>
+                                        </div>
+                                       <div class="col-xs-10">                                    
+                                            <p><?php echo $rws['user_linkedin'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_github']){
+                                    ?>   
+                                        <div class="col-xs-2">
+                                            <p class="profile-details"><i class="fa fa-2x fa-github"></i></p>
+                                        </div>
+                                        <div class="col-xs-10">                                    
+                                            <p><?php echo $rws['user_github'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    </div>
+                                    <div class="col-md-4 column centered">
+                                    <?php
+                                        if ($rws['user_skype']){
+                                    ?>   
+                                        <div class="col-xs-2">
+                                            <p class="profile-details"><i class="fa fa-2x fa-skype"></i></p>
+                                        </div>
+                                        <div class="col-xs-10">                                    
+                                            <p><?php echo $rws['user_skype'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                    <?php
+                                        if ($rws['user_website']){
+                                    ?>   
+                                        <div class="col-xs-2">
+                                            <p class="profile-details"><i class="fa fa-2x fa-star-o"></i></p>
+                                        </div>
+                                        <div class="col-xs-10">                                    
+                                            <p><?php echo $rws['user_website'];?></p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
             </div>
-		<!-- </div> -->
-	</div>
+        <!-- </div> -->
+    </div>
 </div>

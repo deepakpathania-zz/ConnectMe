@@ -19,7 +19,7 @@
                                                                         <div class="panel panel-default dshadow">
                                                                             <div id="panel-element-<?php echo $rws['user_id']; ?>" class="panel-collapse collapse in">
                                                                                 <div class="panel-body">
-                                                                                    <div class="col-md-12 centered column">
+                                                                                    <div class="col-md-12 centered column mleftm">
                                                                                         <img src="userfiles/avatars/<?php echo $rws['user_avatar'];?>" name="aboutme" class="img-responsive avatar-img">                                  
                                                                                     </div>
                                                                                     <div class="col-md-12 centered column">

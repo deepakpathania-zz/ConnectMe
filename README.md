@@ -32,6 +32,9 @@ for example : <code>source /var/www/html/ConnectMe/_sqlfile/user.sql </code>
 
 - You're good to go. Go to <code>localhost/ConnectMe</code> to see it inaction.
 
+# Demo Profile page
+- This is how the final profile page you get looks. http://connectme.000webhostapp.com/deepakpathania
+
 # Screenshots
 - Landing and registration page.
 
